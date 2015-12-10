@@ -87,3 +87,9 @@ group :development do
   # Reports the most tortured code in an easy to read pain report
   gem 'flog', '~> 4.3.2'
 end
+
+group :production, :staging do
+  gem "rails_12factor"
+  gem "rails_stdout_logging"
+  gem "rails_serve_static_assets"
+end
